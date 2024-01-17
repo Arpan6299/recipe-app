@@ -8,8 +8,8 @@ const Recipe = (props) => {
     <p className="cards-title">{props.title}</p>
     <p className="cards-calories">{props.calories}</p>
     <img src={image} alt="" className="cards-image"/>
-    <ol>
-      {ingredients.map((ingredients) => (
+    <ol className="cards-ingredients">
+      {ingredients.map((ingredients)  => (
          <li>{ingredients.text}</li>
       ))}
     </ol>
