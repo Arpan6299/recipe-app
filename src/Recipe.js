@@ -5,8 +5,8 @@ const Recipe = (props) => {
    console.log(props)
  return <div className="recipe-card-container" >
 
-    <p className="cards-title">{props.title}</p>
-    <p className="cards-calories">{props.calories}</p>
+    <p className="cards-title">{title}</p>
+    <p className="cards-calories">{calories}</p>
     <img src={image} alt="" className="cards-image"/>
     <ol className="cards-ingredients">
       {ingredients.map((ingredients)  => (
